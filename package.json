@@ -1,6 +1,6 @@
 {
   "name": "zanata-css-progressbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The standard progress bar for Zanata",
   "main": "index.js",
   "scripts": {

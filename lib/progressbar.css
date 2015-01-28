@@ -1,15 +1,17 @@
 /** @define Progressbar; use strict */
 
 :root {
-  --Progressbar-rhythm           : 1.5rem;
-  --Progressbar-highlight        : #4e9fdd;
-  --Progressbar-success          : #70a98b;
-  --Progressbar-unsure           : #e0c350;
-  --Progressbar-neutral          : color(#416988 tint(50%));
-  --Progressbar-warning          : #e3824e;
-  --Progressbar-danger           : #e0575b;
-  --Progressbar-item-z-index     : 100;
-  --Progressbar-approved-z-index : 200;
+  --Progressbar-rhythm             : 1.5rem;
+  --Progressbar-highlight          : #4e9fdd;
+  --Progressbar-success            : #70a98b;
+  --Progressbar-unsure             : #e0c350;
+  --Progressbar-neutral            : color(#416988 tint(50%));
+  --Progressbar-warning            : #e3824e;
+  --Progressbar-danger             : #e0575b;
+  --Progressbar-item-z-index       : 100;
+  --Progressbar-translated-z-index : 200;
+  --Progressbar-needswork-z-index  : 200;
+  --Progressbar-approved-z-index   : 300;
 }
 
 .Progressbar {
@@ -46,10 +48,12 @@
 
 .Progressbar-translated {
   background-color: var(--Progressbar-success);
+  z-index: var(--Progressbar-translated-z-index);
 }
 
 .Progressbar-needsWork {
   background-color: var(--Progressbar-unsure);
+  z-index: var(--Progressbar-needswork-z-index);
 }
 
 .Progressbar-untranslated {
